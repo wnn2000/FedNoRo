@@ -50,7 +50,7 @@ class LocalUpdate(object):
         self.id = id
         self.idxs = idxs
         self.local_dataset = DatasetSplit(dataset, idxs)
-        self.class_num_list = self.local_dataset.get_num_class_list(self.args)
+        self.class_num_list = self.local_dataset.get_num_of_each_class(self.args)
         logging.info(
             f'client{id} each class num: {self.class_num_list}, total: {len(self.local_dataset)}')
         self.ldr_train = DataLoader(
@@ -68,7 +68,7 @@ class LocalUpdate(object):
 
         # train and update
         epoch_loss = []
-        ce_criterion = LogitAdjust()
+        ce_criterion = LogitAdjust(cls_num_list=self.class_num_list)
         for epoch in range(self.args.local_ep):
             batch_loss = []
             for (_, images, labels) in self.ldr_train:
