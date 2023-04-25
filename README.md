@@ -4,7 +4,7 @@
 ## Introduction
 
 This is the PyTorch implementation of our paper FedNoRo: Towards Noise-Robust Federated Learning By Addressing Class Imbalance and Label Noise Heterogeneity.
-
+![FedNoRo: pipeline](https://github.com/wnn2000/FedNoRo/blob/master/figures/Framework.png)
 
 ## Detailes
 
