@@ -9,6 +9,9 @@ This is the official PyTorch implementation for the paper: "FedNoRo: Towards Noi
 
 More detailes are coming soon.
 
+## Dataset Preparation
+To be updated.
+
 ## Requirements
 ```
 pytorch==1.8.0
