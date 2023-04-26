@@ -105,7 +105,7 @@ if __name__ == '__main__':
                    f'/stage1_model_{rnd}.pth')
 
     #  ------------------------ client selection ------------------------
-    model_path = f"outputs_{args.dataset}_{args.level_n_system}_{args.level_n_lowerb}_{args.level_n_upperb}/FedNoRo_{args.level_n_system}_{args.level_n_lowerb}_{args.level_n_upperb}_{args.local_ep}/models/{args.s1-1}_model.pth"
+    model_path = f"outputs_{args.dataset}_{args.level_n_system}_{args.level_n_lowerb}_{args.level_n_upperb}/FedNoRo_{args.level_n_system}_{args.level_n_lowerb}_{args.level_n_upperb}_{args.local_ep}/models/stage1_model_{args.s1-1}.pth"
     logging.info(
         f"********************** load model from: {model_path} **********************")
     netglob.load_state_dict(torch.load(model_path))
