@@ -193,7 +193,7 @@ def set_output_files(args):
     code_dir = os.path.join(exp_dir, 'code')
     if os.path.exists(code_dir):
         shutil.rmtree(code_dir)
-    shutil.copytree('.', code_dir, ignore=shutil.ignore_patterns('git'))
+    # shutil.copytree('.', code_dir, ignore=shutil.ignore_patterns('.git'))
 
     logging.basicConfig(filename=logs_dir+'/logs.txt', level=logging.INFO,
                         format='[%(asctime)s.%(msecs)03d] %(message)s', datefmt='%H:%M:%S')

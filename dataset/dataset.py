@@ -63,6 +63,15 @@ def get_dataset(args):
     else:
         dict_users = non_iid_dirichlet_sampling(y_train, args.n_classes, args.non_iid_prob_class, args.n_clients, seed=100, alpha_dirichlet=args.alpha_dirichlet)
 
+    # check
+    assert len(dict_users.keys()) == args.n_clients
+    items = []
+    for key in dict_users.keys():
+        items += list(dict_users[key])
+    assert len(items) == len(set(items)) == len(y_train)
+
+    print("### Datasets are ready ###")
+    
     return train_dataset, test_dataset, dict_users
 
 
