@@ -7,7 +7,7 @@ This is the official PyTorch implementation for the paper: "FedNoRo: Towards Noi
 
 ## Details
 
-More detailes are coming soon.
+More details are coming soon.
 
 ## Dataset Preparation
 To be updated.
