@@ -14,7 +14,7 @@ This paper proposes a federated noisy label learning framework for class-imbalan
 Please download the ICH dataset from [kaggle](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection) and preprocess it follow this [notebook](https://www.kaggle.com/guiferviz/prepare-dataset-resizing-and-saving-as-png). Please download the ISIC 2019 dataset from this [link](https://challenge.isic-archive.com/data/#2019). Data partition can be found in the paper.
 
 ## Requirements
-We recommend using conda to setup the environment, See the `requirements.txt` for environment configuration.
+We recommend using conda to setup the environment. See the `requirements.txt` for environment configuration.
 
 ## Main Baselines:
 - FedAvg [[paper](http://proceedings.mlr.press/v54/mcmahan17a?ref=https://githubhelp.com)]
