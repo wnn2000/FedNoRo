@@ -29,11 +29,17 @@ We recommend using conda to setup the environment, See the `requirements.txt` fo
 If this repository is useful for your research, please consider citing:
 
 ```shell
-@inproceedings{wu2022fednoro,
-  title={{FedNoRo}: Towards Noise-Robust Federated Learning by Addressing Class Imbalance and Label Noise Heterogeneity},
-  author={Wu, Nannan and Yu, Li and Jiang, Xuefeng and Cheng, Kwang-Ting and Yan, Zengqiang},
-  booktitle={Proceedings of International Joint Conference on Artificial Intelligence},
-  year={2023}
+@inproceedings{wu2023fednoro,
+  title     = {FedNoRo: Towards Noise-Robust Federated Learning by Addressing Class Imbalance and Label Noise Heterogeneity},
+  author    = {Wu, Nannan and Yu, Li and Jiang, Xuefeng and Cheng, Kwang-Ting and Yan, Zengqiang},
+  booktitle = {Proceedings of the Thirty-Second International Joint Conference on
+               Artificial Intelligence, {IJCAI-23}},
+  pages     = {4424--4432},
+  year      = {2023},
+  month     = {8},
+  note      = {Main Track},
+  doi       = {10.24963/ijcai.2023/492},
+  url       = {https://doi.org/10.24963/ijcai.2023/492},
 }
   ```
 
